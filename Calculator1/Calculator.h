@@ -7,11 +7,10 @@
 //
 
 #import <Foundation/Foundation.h>
-
 @interface Calculator : NSObject
-@property(nonatomic) int intReg;
-@property(nonatomic) float floatReg;
-+(Calculator *) calculator;///################################
++(Calculator *) getInstance;
+
+@property(nonatomic) double doubleReg;
 -(int)Add:(int) first With:(int) second;
 -(int)Add:(int) next;
 -(int)Sub:(int) first With:(int) second;

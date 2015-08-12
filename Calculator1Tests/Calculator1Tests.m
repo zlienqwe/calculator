@@ -23,8 +23,8 @@
 }
 
 - (void)setUp {
-    cal = [Calculator new];
     [super setUp];
+    cal = [Calculator getInstance];
     // Put setup code here. This method is called before the invocation of each test method in the class.
 }
 
@@ -37,9 +37,7 @@
     // This is an example of a functional test case.
     XCTAssertEqual(45, [cal Add:22 With:23]);
 }
--(void)testReAddWithNothing{
-    XCTAssertEqual(100, [cal Add:100]);
-}
+
 - (void)testReAdd {
     [cal Add:22 With:23];
     XCTAssertEqual(69, [cal Add:24]);
@@ -71,6 +69,15 @@
 //测试开平方
 -(void)testSqrt{
     XCTAssertEqual(4, [cal Sqrt:16]);
+}
+//测试开双平方
+-(void)testReSqrt{
+    [cal Sqrt:16];
+    XCTAssertEqual(2.00, [cal Sqrt]);
+}
+-(void)testGetInstance{
+    Calculator *testCal = [Calculator getInstance];
+    XCTAssertEqual(cal, testCal);
 }
 - (void)testPerformanceExample {
     // This is an example of a performance test case.

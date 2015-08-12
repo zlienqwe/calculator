@@ -10,6 +10,10 @@
 
 @implementation Calculator (Sqrt)
 -(double)Sqrt:(double)num {
+    self.doubleReg = sqrt(num);
     return sqrt(num);
-};
+}
+-(double)Sqrt{
+    return sqrt(self.doubleReg);
+}
 @end

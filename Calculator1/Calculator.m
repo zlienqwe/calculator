@@ -9,42 +9,42 @@
 #import "Calculator.h"
 static Calculator * calculator = nil;
 @implementation Calculator
-+(Calculator *)calculator{
++(Calculator *)getInstance{
     @synchronized(self){
         if (calculator == nil) {
             calculator = [Calculator new];
         }
     }
     return calculator;
-};
+}
 
 -(int)Add:(int)first With:(int)second{
-    self.intReg = first + second;
+    self.doubleReg = first + second;
     return first + second;
-};
+}
 -(int)Sub:(int)first With:(int)second{
-    self.intReg = first - second;
+    self.doubleReg = first - second;
     return first - second;
-};
+}
 -(int)Mul:(int)first With:(int)second{
-    self.intReg = first * second;
+    self.doubleReg = first * second;
     return first * second;
-};
+}
 -(float)Div:(int)first With:(int)second{
-    self.floatReg = first / second;
+    self.doubleReg = first / second;
     return first / second;
-};
+}
 -(int)Add:(int)next{
-    return self.intReg + next;
-};
+    return self.doubleReg + next;
+}
 -(int)Sub:(int)next{
-    return self.intReg - next;
-};
+    return self.doubleReg - next;
+}
 -(int)Mul:(int)next{
-    return self.intReg * next;
+    return self.doubleReg * next;
 }
 -(float)Div:(int)next{
-    return self.floatReg / next;
+    return self.doubleReg / next;
 }
 
 @end
