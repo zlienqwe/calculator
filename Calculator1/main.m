@@ -8,9 +8,12 @@
 
 #import <UIKit/UIKit.h>
 #import "AppDelegate.h"
+#import "Calculator.h"
 
-int main(int argc, char * argv[]) {
-    @autoreleasepool {
-        return UIApplicationMain(argc, argv, nil, NSStringFromClass([AppDelegate class]));
-    }
+int main() {
+    Calculator *calculator = [Calculator new];
+    int addRes = [calculator add:22 second:23];
+    int subRes = [calculator sub:100 second:30];
+    NSLog(@"22 + 23 is %d", addRes);
+    NSLog(@"100 - 30 is %d", subRes);
 }

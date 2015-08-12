@@ -14,6 +14,7 @@
 		8A4EB11D1B7ADF5300FA4D07 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8A4EB11C1B7ADF5300FA4D07 /* Images.xcassets */; };
 		8A4EB1201B7ADF5300FA4D07 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8A4EB11E1B7ADF5300FA4D07 /* LaunchScreen.xib */; };
 		8A4EB12C1B7ADF5300FA4D07 /* Calculator1Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A4EB12B1B7ADF5300FA4D07 /* Calculator1Tests.m */; };
+		8A4EB1371B7ADF7700FA4D07 /* Calculator.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A4EB1361B7ADF7700FA4D07 /* Calculator.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,7 +40,9 @@
 		8A4EB11F1B7ADF5300FA4D07 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		8A4EB1251B7ADF5300FA4D07 /* Calculator1Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Calculator1Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8A4EB12A1B7ADF5300FA4D07 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		8A4EB12B1B7ADF5300FA4D07 /* Calculator1Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Calculator1Tests.m; sourceTree = "<group>"; };
+		8A4EB12B1B7ADF5300FA4D07 /* Calculator1Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = Calculator1Tests.m; path = Calculator1Tests/Calculator1Tests.m; sourceTree = SOURCE_ROOT; };
+		8A4EB1351B7ADF7700FA4D07 /* Calculator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Calculator.h; sourceTree = "<group>"; };
+		8A4EB1361B7ADF7700FA4D07 /* Calculator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Calculator.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +84,9 @@
 		8A4EB10E1B7ADF5300FA4D07 /* Calculator1 */ = {
 			isa = PBXGroup;
 			children = (
+				8A4EB1351B7ADF7700FA4D07 /* Calculator.h */,
+				8A4EB1361B7ADF7700FA4D07 /* Calculator.m */,
+				8A4EB1111B7ADF5300FA4D07 /* main.m */,
 				8A4EB1131B7ADF5300FA4D07 /* AppDelegate.h */,
 				8A4EB1141B7ADF5300FA4D07 /* AppDelegate.m */,
 				8A4EB1161B7ADF5300FA4D07 /* ViewController.h */,
@@ -97,7 +103,6 @@
 			isa = PBXGroup;
 			children = (
 				8A4EB1101B7ADF5300FA4D07 /* Info.plist */,
-				8A4EB1111B7ADF5300FA4D07 /* main.m */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -220,6 +225,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8A4EB1181B7ADF5300FA4D07 /* ViewController.m in Sources */,
+				8A4EB1371B7ADF7700FA4D07 /* Calculator.m in Sources */,
 				8A4EB1151B7ADF5300FA4D07 /* AppDelegate.m in Sources */,
 				8A4EB1121B7ADF5300FA4D07 /* main.m in Sources */,
 			);
