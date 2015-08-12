@@ -10,9 +10,18 @@
 
 @implementation Calculator
 -(int)add:(int)a second:(int)b{
+    self.reg = a + b;
     return a+b;
 };
 -(int)sub:(int)a second:(int)b{
+    self.reg = a - b;
     return a-b;
 };
+-(int)cum:(int)a{
+    return self.reg + a;
+};
+-(int)dim:(int)a{
+    return self.reg - a;
+};
+
 @end

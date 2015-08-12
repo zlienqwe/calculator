@@ -9,6 +9,9 @@
 #import <Foundation/Foundation.h>
 
 @interface Calculator : NSObject
+@property(nonatomic) int reg;
 -(int)add:(int)a second:(int)b;
+-(int)cum:(int)a;
 -(int)sub:(int)a second:(int)b;
+-(int)dim:(int)a;
 @end
