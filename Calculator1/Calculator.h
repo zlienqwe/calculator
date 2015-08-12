@@ -11,6 +11,7 @@
 @interface Calculator : NSObject
 @property(nonatomic) int intReg;
 @property(nonatomic) float floatReg;
++(Calculator *) calculator;///################################
 -(int)Add:(int) first With:(int) second;
 -(int)Add:(int) next;
 -(int)Sub:(int) first With:(int) second;

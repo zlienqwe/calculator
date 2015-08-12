@@ -8,7 +8,11 @@
 
 #import <UIKit/UIKit.h>
 #import <XCTest/XCTest.h>
+
 #import "Calculator.h"
+//引入Calculator+Sqrt头文件
+#import "Calculator+Sqrt.h"
+
 
 @interface Calculator1Tests : XCTestCase
 
@@ -32,6 +36,9 @@
 - (void)testAdd {
     // This is an example of a functional test case.
     XCTAssertEqual(45, [cal Add:22 With:23]);
+}
+-(void)testReAddWithNothing{
+    XCTAssertEqual(100, [cal Add:100]);
 }
 - (void)testReAdd {
     [cal Add:22 With:23];
@@ -60,6 +67,10 @@
 -(void)testReDiv{
     [cal Div:100 With:5];
     XCTAssertEqual(4, [cal Div:5]);
+}
+//测试开平方
+-(void)testSqrt{
+    XCTAssertEqual(4, [cal Sqrt:16]);
 }
 - (void)testPerformanceExample {
     // This is an example of a performance test case.

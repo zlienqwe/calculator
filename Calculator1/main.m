@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "AppDelegate.h"
 #import "Calculator.h"
+#import "Calculator+Sqrt.h"
 
 int main(int argc, char * argv[]) {
     
@@ -21,10 +22,12 @@ int main(int argc, char * argv[]) {
     mulRes = [calculator Mul:5];
     float divRes = [calculator Div:100 With:5];
     divRes = [calculator Div:3];
+    double sqrtRes = [calculator Sqrt:16];
     NSLog(@"20 + 30 + 40 is %d", addRes);
     NSLog(@"100 - 30 - 20 is %d", subRes);
     NSLog(@"3 * 4 * 5 is %d", mulRes);
     NSLog(@"100 / 5 / 3 is %.2f", divRes);
+    NSLog(@"16 sqrt is %.2f", sqrtRes);
     
     @autoreleasepool {
         return UIApplicationMain(argc, argv, nil, NSStringFromClass([AppDelegate class]));

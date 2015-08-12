@@ -15,6 +15,7 @@
 		8A4EB1201B7ADF5300FA4D07 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8A4EB11E1B7ADF5300FA4D07 /* LaunchScreen.xib */; };
 		8A4EB12C1B7ADF5300FA4D07 /* Calculator1Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A4EB12B1B7ADF5300FA4D07 /* Calculator1Tests.m */; };
 		8A4EB1371B7ADF7700FA4D07 /* Calculator.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A4EB1361B7ADF7700FA4D07 /* Calculator.m */; };
+		8A4EB13D1B7B142A00FA4D07 /* Calculator+Sqrt.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A4EB13C1B7B142A00FA4D07 /* Calculator+Sqrt.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +44,8 @@
 		8A4EB12B1B7ADF5300FA4D07 /* Calculator1Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = Calculator1Tests.m; path = Calculator1Tests/Calculator1Tests.m; sourceTree = SOURCE_ROOT; };
 		8A4EB1351B7ADF7700FA4D07 /* Calculator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Calculator.h; sourceTree = "<group>"; };
 		8A4EB1361B7ADF7700FA4D07 /* Calculator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Calculator.m; sourceTree = "<group>"; };
+		8A4EB13B1B7B142A00FA4D07 /* Calculator+Sqrt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Calculator+Sqrt.h"; sourceTree = "<group>"; };
+		8A4EB13C1B7B142A00FA4D07 /* Calculator+Sqrt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Calculator+Sqrt.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +90,8 @@
 				8A4EB1351B7ADF7700FA4D07 /* Calculator.h */,
 				8A4EB1361B7ADF7700FA4D07 /* Calculator.m */,
 				8A4EB1111B7ADF5300FA4D07 /* main.m */,
+				8A4EB13B1B7B142A00FA4D07 /* Calculator+Sqrt.h */,
+				8A4EB13C1B7B142A00FA4D07 /* Calculator+Sqrt.m */,
 				8A4EB1131B7ADF5300FA4D07 /* AppDelegate.h */,
 				8A4EB1141B7ADF5300FA4D07 /* AppDelegate.m */,
 				8A4EB1161B7ADF5300FA4D07 /* ViewController.h */,
@@ -225,6 +230,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8A4EB1181B7ADF5300FA4D07 /* ViewController.m in Sources */,
+				8A4EB13D1B7B142A00FA4D07 /* Calculator+Sqrt.m in Sources */,
 				8A4EB1371B7ADF7700FA4D07 /* Calculator.m in Sources */,
 				8A4EB1151B7ADF5300FA4D07 /* AppDelegate.m in Sources */,
 				8A4EB1121B7ADF5300FA4D07 /* main.m in Sources */,

@@ -7,8 +7,17 @@
 //
 
 #import "Calculator.h"
-
+static Calculator * calculator = nil;
 @implementation Calculator
++(Calculator *)calculator{
+    @synchronized(self){
+        if (calculator == nil) {
+            calculator = [Calculator new];
+        }
+    }
+    return calculator;
+};
+
 -(int)Add:(int)first With:(int)second{
     self.intReg = first + second;
     return first + second;
