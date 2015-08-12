@@ -9,19 +9,33 @@
 #import "Calculator.h"
 
 @implementation Calculator
--(int)add:(int)a second:(int)b{
-    self.reg = a + b;
-    return a+b;
+-(int)Add:(int)first With:(int)second{
+    self.intReg = first + second;
+    return first + second;
 };
--(int)sub:(int)a second:(int)b{
-    self.reg = a - b;
-    return a-b;
+-(int)Sub:(int)first With:(int)second{
+    self.intReg = first - second;
+    return first - second;
 };
--(int)cum:(int)a{
-    return self.reg + a;
+-(int)Mul:(int)first With:(int)second{
+    self.intReg = first * second;
+    return first * second;
 };
--(int)dim:(int)a{
-    return self.reg - a;
+-(float)Div:(int)first With:(int)second{
+    self.floatReg = first / second;
+    return first / second;
 };
+-(int)Add:(int)next{
+    return self.intReg + next;
+};
+-(int)Sub:(int)next{
+    return self.intReg - next;
+};
+-(int)Mul:(int)next{
+    return self.intReg * next;
+}
+-(float)Div:(int)next{
+    return self.floatReg / next;
+}
 
 @end
