@@ -9,7 +9,7 @@
 #import <Foundation/Foundation.h>
 #import "callbackAdd.h"
 
-@interface Calculator : NSObject <callbackAdd>
+@interface Calculator : NSObject
 +(Calculator *) getInstance;
 
 @property(nonatomic) double doubleReg;
@@ -24,3 +24,6 @@
 -(float)Div:(int) first With:(int) second;
 -(float)Div:(int) next;
 @end
+
+
+
