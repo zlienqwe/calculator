@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "AppDelegate.h"
 #import "Calculator.h"
+#import "callbackAdd.h"
 #import "Calculator+Sqrt.h"
 
 int main(int argc, char * argv[]) {

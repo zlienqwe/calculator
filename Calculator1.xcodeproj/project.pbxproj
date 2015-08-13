@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8A0C82141B7C5E6600C8DC6B /* callbackAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A0C82131B7C5E6600C8DC6B /* callbackAdd.m */; };
 		8A4EB1121B7ADF5300FA4D07 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A4EB1111B7ADF5300FA4D07 /* main.m */; };
 		8A4EB1151B7ADF5300FA4D07 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A4EB1141B7ADF5300FA4D07 /* AppDelegate.m */; };
 		8A4EB1181B7ADF5300FA4D07 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A4EB1171B7ADF5300FA4D07 /* ViewController.m */; };
@@ -29,6 +30,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8A0C82131B7C5E6600C8DC6B /* callbackAdd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = callbackAdd.m; sourceTree = "<group>"; };
 		8A4EB10C1B7ADF5300FA4D07 /* Calculator1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Calculator1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8A4EB1101B7ADF5300FA4D07 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8A4EB1111B7ADF5300FA4D07 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -46,6 +48,7 @@
 		8A4EB1361B7ADF7700FA4D07 /* Calculator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Calculator.m; sourceTree = "<group>"; };
 		8A4EB13B1B7B142A00FA4D07 /* Calculator+Sqrt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Calculator+Sqrt.h"; sourceTree = "<group>"; };
 		8A4EB13C1B7B142A00FA4D07 /* Calculator+Sqrt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Calculator+Sqrt.m"; sourceTree = "<group>"; };
+		8AAB0A721B7C3FF20091D189 /* callbackAdd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = callbackAdd.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +90,8 @@
 		8A4EB10E1B7ADF5300FA4D07 /* Calculator1 */ = {
 			isa = PBXGroup;
 			children = (
+				8AAB0A721B7C3FF20091D189 /* callbackAdd.h */,
+				8A0C82131B7C5E6600C8DC6B /* callbackAdd.m */,
 				8A4EB1351B7ADF7700FA4D07 /* Calculator.h */,
 				8A4EB1361B7ADF7700FA4D07 /* Calculator.m */,
 				8A4EB1111B7ADF5300FA4D07 /* main.m */,
@@ -233,6 +238,7 @@
 				8A4EB13D1B7B142A00FA4D07 /* Calculator+Sqrt.m in Sources */,
 				8A4EB1371B7ADF7700FA4D07 /* Calculator.m in Sources */,
 				8A4EB1151B7ADF5300FA4D07 /* AppDelegate.m in Sources */,
+				8A0C82141B7C5E6600C8DC6B /* callbackAdd.m in Sources */,
 				8A4EB1121B7ADF5300FA4D07 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -428,6 +434,7 @@
 				8A4EB1311B7ADF5300FA4D07 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8A4EB1321B7ADF5300FA4D07 /* Build configuration list for PBXNativeTarget "Calculator1Tests" */ = {
 			isa = XCConfigurationList;
@@ -436,6 +443,7 @@
 				8A4EB1341B7ADF5300FA4D07 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
