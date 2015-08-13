@@ -10,6 +10,7 @@
 #import "CalculatorDelegate.h"
 static Calculator * calculator = nil;
 @implementation Calculator
+
 +(Calculator *)getInstance{
     @synchronized(self){
         if (calculator == nil) {
@@ -21,22 +22,25 @@ static Calculator * calculator = nil;
 
 -(int)Add:(int)first With:(int)second{
     self.doubleReg = first + second;
-    [self.callbackAddParameter callbackParameter:first And:second];
+    [self.calculatorDelegate callbackParameter:first And:second algorithm:[self.algorithm objectForKey:@(addition)]];
     return first + second;
 }
 -(int)Sub:(int)first With:(int)second{
     self.doubleReg = first - second;
-    [self.callbackAddParameter callbackParameter:first And:second];
+//    [self.callbackSubParameter callbackParameter:first And:second];
+    [self.calculatorDelegate callbackParameter:first And:second algorithm:[self.algorithm objectForKey:@(subtraction)]];
     return first - second;
 }
 -(int)Mul:(int)first With:(int)second{
     self.doubleReg = first * second;
-    [self.callbackAddParameter callbackParameter:first And:second];
+//    [self.callbackMulParameter callbackParameter:first And:second];
+    [self.calculatorDelegate callbackParameter:first And:second algorithm:[self.algorithm objectForKey:@(multiplication)]];
     return first * second;
 }
 -(float)Div:(int)first With:(int)second{
     self.doubleReg = first / second;
-    [self.callbackAddParameter callbackParameter:first And:second];
+//    [self.callbackDivParameter callbackParameter:first And:second];
+    [self.calculatorDelegate callbackParameter:first And:second algorithm:[self.algorithm objectForKey:@(division)]];
     return first / second;
 }
 -(int)Add:(int)next{

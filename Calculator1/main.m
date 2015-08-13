@@ -14,7 +14,9 @@
 
 int main(int argc, char * argv[]) {
     Calculator *calculator = [Calculator new];
-    calculator.callbackAddParameter = [CalculatorCallback new];
+    calculator.calculatorDelegate = [CalculatorCallback new];
+    calculator.algorithm = @{@(addition):@"addition",@(subtraction):@"subtraction",@(multiplication):@"multiplication",@(division):@"division"};
+    
     int addRes = [calculator Add:20 With:30];
     addRes = [calculator Add:40];
     int subRes = [calculator Sub:100 With:30];
