@@ -7,6 +7,7 @@
 //
 
 #import "Calculator.h"
+#import "CalculatorDelegate.h"
 static Calculator * calculator = nil;
 @implementation Calculator
 +(Calculator *)getInstance{
@@ -20,12 +21,12 @@ static Calculator * calculator = nil;
 
 -(int)Add:(int)first With:(int)second{
     self.doubleReg = first + second;
-    Callback *call = [Callback new];
-    [call CallbackParameter:first And:second];
+    [self.callbackAddParameter callbackParameter:first And:second];
     return first + second;
 }
 -(int)Sub:(int)first With:(int)second{
     self.doubleReg = first - second;
+    [self.callbackAddParameter callbackParameter:first And:second];
     return first - second;
 }
 -(int)Mul:(int)first With:(int)second{

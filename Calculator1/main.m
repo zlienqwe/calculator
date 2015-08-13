@@ -9,11 +9,12 @@
 #import <UIKit/UIKit.h>
 #import "AppDelegate.h"
 #import "Calculator.h"
-#import "callbackAdd.h"
+#import "CalculatorDelegate.h"
 #import "Calculator+Sqrt.h"
 
 int main(int argc, char * argv[]) {
     Calculator *calculator = [Calculator new];
+    calculator.callbackAddParameter = [CalculatorCallback new];
     int addRes = [calculator Add:20 With:30];
     addRes = [calculator Add:40];
     int subRes = [calculator Sub:100 With:30];

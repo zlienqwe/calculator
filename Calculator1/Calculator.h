@@ -7,16 +7,15 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "callbackAdd.h"
+#import "CalculatorDelegate.h"
 
 @interface Calculator : NSObject
 +(Calculator *) getInstance;
-
 @property(nonatomic) double doubleReg;
+@property id <CalculatorDelegate> callbackAddParameter;
 
 -(int)Add:(int) first With:(int) second;
 -(int)Add:(int) next;
-
 -(int)Sub:(int) first With:(int) second;
 -(int)Sub:(int) next;
 -(int)Mul:(int) first With:(int) second;

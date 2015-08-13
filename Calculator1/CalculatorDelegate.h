@@ -8,10 +8,10 @@
 
 #import <Foundation/Foundation.h>
 
-@protocol callbackAdd
--(void)CallbackParameter:(int)firstParameter And:(int)secondParameter;
+@protocol CalculatorDelegate
+-(void)callbackParameter:(int)firstParameter And:(int)secondParameter;
 @end
 
-@interface Callback : NSObject <callbackAdd>
+@interface CalculatorCallback : NSObject <CalculatorDelegate>
 
 @end
