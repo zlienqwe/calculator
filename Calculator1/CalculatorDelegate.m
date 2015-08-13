@@ -9,8 +9,11 @@
 #import "CalculatorDelegate.h"
 
 @implementation CalculatorCallback : NSObject
+
 -(void)callbackParameter:(int)firstParameter And:(int)secondParameter algorithm:(NSString *)algorithm{
+    
     NSLog(@"%@ first parameter is %d,second parameter is %d.",algorithm,firstParameter, secondParameter);
 }
+
 @end
 

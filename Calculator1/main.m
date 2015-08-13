@@ -13,8 +13,10 @@
 #import "Calculator+Sqrt.h"
 
 int main(int argc, char * argv[]) {
+    
     Calculator *calculator = [Calculator new];
     calculator.calculatorDelegate = [CalculatorCallback new];
+    
     calculator.algorithm = @{@(addition):@"addition",@(subtraction):@"subtraction",@(multiplication):@"multiplication",@(division):@"division"};
     
     int addRes = [calculator Add:20 With:30];
@@ -39,6 +41,7 @@ int main(int argc, char * argv[]) {
     NSLog(@"16 sqrt and sqrt is %.2f", reSqrtRes);
     NSLog(@" ( 20 + 5 ) * 4 is %d", addMulRes);
     NSLog(@"sqrt 20 + 80  is %.2f", addSqrtRes);
+    
     @autoreleasepool {
         return UIApplicationMain(argc, argv, nil, NSStringFromClass([AppDelegate class]));
     }

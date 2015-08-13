@@ -12,10 +12,11 @@
 @protocol CalculatorDelegate
 
 -(void)callbackParameter:(int)firstParameter And:(int)secondParameter algorithm:(NSString*)algorithm;
+
 @end
 
 @interface CalculatorCallback : NSObject <CalculatorDelegate>{
-
+    
 }
 
 @end

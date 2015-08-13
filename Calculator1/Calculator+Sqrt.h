@@ -9,6 +9,8 @@
 #import "Calculator.h"
 
 @interface Calculator (Sqrt)
+
 -(double)Sqrt:(double)num;
 -(double)Sqrt;
+
 @end

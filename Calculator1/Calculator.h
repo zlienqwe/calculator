@@ -10,6 +10,7 @@
 #import "CalculatorDelegate.h"
 
 typedef NS_ENUM(NSInteger, Algorithm) {
+    
     addition,
     subtraction,
     multiplication,
@@ -17,13 +18,12 @@ typedef NS_ENUM(NSInteger, Algorithm) {
 };
 
 @interface Calculator : NSObject
-+(Calculator *) getInstance;
-@property(nonatomic) double doubleReg;
 
+@property(nonatomic) double doubleReg;
 @property id <CalculatorDelegate> calculatorDelegate;
 @property (strong) NSDictionary *algorithm;
 
-
++(Calculator *) getInstance;
 -(int)Add:(int) first With:(int) second;
 -(int)Add:(int) next;
 -(int)Sub:(int) first With:(int) second;
@@ -32,6 +32,7 @@ typedef NS_ENUM(NSInteger, Algorithm) {
 -(int)Mul:(int) next;
 -(float)Div:(int) first With:(int) second;
 -(float)Div:(int) next;
+
 @end
 
 
