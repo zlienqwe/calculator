@@ -31,10 +31,12 @@ static Calculator * calculator = nil;
 }
 -(int)Mul:(int)first With:(int)second{
     self.doubleReg = first * second;
+    [self.callbackAddParameter callbackParameter:first And:second];
     return first * second;
 }
 -(float)Div:(int)first With:(int)second{
     self.doubleReg = first / second;
+    [self.callbackAddParameter callbackParameter:first And:second];
     return first / second;
 }
 -(int)Add:(int)next{
