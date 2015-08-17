@@ -33,7 +33,7 @@ int main(int argc, char * argv[]) {
     double addSqrtRes = [calculator Add:30 With:70];
     addSqrtRes = [calculator Sqrt];
     
-    double sqrtResult=[calculator Block:^double(double dou) { return sqrt(dou); } SqrtWith:81];
+    double sqrtResult=[calculator Sqrt:^(double dou){} With:81];
     double reSqrtResu = [calculator Sqrt];
     
     NSLog(@"20 + 30 + 40 is %d", addRes);

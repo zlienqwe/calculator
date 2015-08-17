@@ -67,7 +67,4 @@ static Calculator * calculator = nil;
 }
 
 
-
-
-
 @end

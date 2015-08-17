@@ -10,12 +10,12 @@
 
 @implementation Calculator (Sqrt)
 
--(double)Block:(sqrt_block) regBlock SqrtWith: (double) reg
+-(double)Sqrt:(sqrt_block) regBlock With: (double) reg
 {
     self.doubleReg = sqrt(reg);
-
-    return regBlock(reg);
+    return sqrt(reg);
 }
+
 
 -(double)Sqrt
 {
