@@ -70,15 +70,7 @@
     [cal Div:100 With:5];
     XCTAssertEqual(4, [cal Div:5]);
 }
-//测试开平方
--(void)testSqrt{
-    XCTAssertEqual(4, [cal Sqrt:16]);
-}
-//测试开双平方
--(void)testReSqrt{
-    [cal Sqrt:16];
-    XCTAssertEqual(2.00, [cal Sqrt]);
-}
+
 -(void)testGetInstance{
     Calculator *testCal = [Calculator getInstance];
     XCTAssertEqual(cal, testCal);

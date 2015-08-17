@@ -10,7 +10,10 @@
 
 @interface Calculator (Sqrt)
 
--(double)Sqrt:(double)num;
+typedef double(^sqrt_block)(double);
+
+-(double)Block:(sqrt_block) regBlock SqrtWith: (double) reg ;
+
 -(double)Sqrt;
 
 @end

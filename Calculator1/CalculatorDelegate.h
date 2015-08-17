@@ -13,7 +13,8 @@ typedef enum {
     ADDITION,
     SUBTRACTION,
     MULTIPLICATION,
-    DIVISION
+    DIVISION,
+    SQRT
 } NS_ENUM;
 @protocol CalculatorDelegate
 

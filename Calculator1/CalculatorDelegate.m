@@ -25,6 +25,9 @@
         case 3:
             typeOfCal = @"Division";
             break;
+        case 4:
+            typeOfCal = @"Sqrt";
+            break;
     }
     
     NSLog(@"%@ first parameter is %d,second parameter is %d.",typeOfCal,firstParameter, secondParameter);
