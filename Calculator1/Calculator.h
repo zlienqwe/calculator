@@ -9,19 +9,12 @@
 #import <Foundation/Foundation.h>
 #import "CalculatorDelegate.h"
 
-typedef NS_ENUM(NSInteger, Algorithm) {
-    
-    addition,
-    subtraction,
-    multiplication,
-    division
-};
 
 @interface Calculator : NSObject
 
 @property(nonatomic) double doubleReg;
 @property id <CalculatorDelegate> calculatorDelegate;
-@property (strong) NSDictionary *algorithm;
+
 
 +(Calculator *) getInstance;
 -(int)Add:(int) first With:(int) second;

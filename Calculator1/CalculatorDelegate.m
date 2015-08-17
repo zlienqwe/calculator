@@ -10,9 +10,24 @@
 
 @implementation CalculatorCallback : NSObject
 
--(void)callbackParameter:(int)firstParameter And:(int)secondParameter algorithm:(NSString *)algorithm{
+-(void)callbackParameter:(int)firstParameter And:(int)secondParameter algorithm:(NS_ENUM)algorithm{
+    NSString *typeOfCal;
+    switch (algorithm) {
+        case 0:
+            typeOfCal = @"Addtion";
+            break;
+        case 1:
+            typeOfCal = @"Subtraction";
+            break;
+        case 2:
+            typeOfCal = @"Multiplication";
+            break;
+        case 3:
+            typeOfCal = @"Division";
+            break;
+    }
     
-    NSLog(@"%@ first parameter is %d,second parameter is %d.",algorithm,firstParameter, secondParameter);
+    NSLog(@"%@ first parameter is %d,second parameter is %d.",typeOfCal,firstParameter, secondParameter);
 }
 
 @end

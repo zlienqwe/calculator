@@ -17,7 +17,6 @@ int main(int argc, char * argv[]) {
     Calculator *calculator = [Calculator new];
     calculator.calculatorDelegate = [CalculatorCallback new];
     
-    calculator.algorithm = @{@(addition):@"addition",@(subtraction):@"subtraction",@(multiplication):@"multiplication",@(division):@"division"};
     
     int addRes = [calculator Add:20 With:30];
     addRes = [calculator Add:40];
@@ -33,6 +32,7 @@ int main(int argc, char * argv[]) {
     addMulRes = [calculator Mul:4];
     double addSqrtRes = [calculator Add:30 With:70];
     addSqrtRes = [calculator Sqrt];
+
     NSLog(@"20 + 30 + 40 is %d", addRes);
     NSLog(@"100 - 30 - 20 is %d", subRes);
     NSLog(@"3 * 4 * 5 is %d", mulRes);

@@ -25,28 +25,28 @@ static Calculator * calculator = nil;
 -(int)Add:(int)first With:(int)second{
     
     self.doubleReg = first + second;
-    [self.calculatorDelegate callbackParameter:first And:second algorithm:[self.algorithm objectForKey:@(addition)]];
+    [self.calculatorDelegate callbackParameter:first And:second algorithm:ADDITION];
     return first + second;
 }
 
 -(int)Sub:(int)first With:(int)second{
     
     self.doubleReg = first - second;
-    [self.calculatorDelegate callbackParameter:first And:second algorithm:[self.algorithm objectForKey:@(subtraction)]];
+    [self.calculatorDelegate callbackParameter:first And:second algorithm:SUBTRACTION];
     return first - second;
 }
 
 -(int)Mul:(int)first With:(int)second{
     
     self.doubleReg = first * second;
-    [self.calculatorDelegate callbackParameter:first And:second algorithm:[self.algorithm objectForKey:@(multiplication)]];
+    [self.calculatorDelegate callbackParameter:first And:second algorithm:MULTIPLICATION];
     return first * second;
 }
 
 -(float)Div:(int)first With:(int)second{
     
     self.doubleReg = first / second;
-    [self.calculatorDelegate callbackParameter:first And:second algorithm:[self.algorithm objectForKey:@(division)]];
+    [self.calculatorDelegate callbackParameter:first And:second algorithm:DIVISION];
     return first / second;
 }
 

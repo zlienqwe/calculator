@@ -8,10 +8,16 @@
 
 #import <Foundation/Foundation.h>
 
-
+typedef enum {
+    
+    ADDITION,
+    SUBTRACTION,
+    MULTIPLICATION,
+    DIVISION
+} NS_ENUM;
 @protocol CalculatorDelegate
 
--(void)callbackParameter:(int)firstParameter And:(int)secondParameter algorithm:(NSString*)algorithm;
+-(void)callbackParameter:(int)firstParameter And:(int)secondParameter algorithm:(NS_ENUM) algorithm;
 
 @end
 
